@@ -4,6 +4,7 @@ import './Home.css'
 import { Link } from "react-router-dom";
 import AppsIcon from "@material-ui/icons/Apps"
 import { Avatar } from '@material-ui/core';
+import Search from '../components/Search';
 
 const Home = () => {
     return (
@@ -23,6 +24,9 @@ const Home = () => {
             </div>
             <div className="home_body">
                 <img src="https://1000logos.net/wp-content/uploads/2021/05/Google-logo.png" width="272" height="92" alt="" srcset="" />
+                <div className="home_inputContainer">
+                    <Search hideButtons/>
+                </div>
             </div>
         </div>
     )

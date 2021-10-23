@@ -7,14 +7,15 @@ import {
 } from "react-router-dom";
 import './App.css';
 import Home from './pages/Home';
+import SearchPage from "./components/SearchPage";
 function App() {
   return (
     <div className="App">
       <Router>
       <Switch>
           <Route path="/search">
-            {/* <SearchPage /> */}
-            <h1>This is search page </h1>
+            <SearchPage />
+            
           </Route>
           
           <Route path="/">
